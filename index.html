@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acervo de Atividades - 3º Bimestre</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto p-4">
+    <!-- Logo da ETE -->
+    <div class="text-center mb-6">
+      <img src="https://i.postimg.cc/T3ZGKXQc/etegp.png" alt="Logo ETE Ginásio Pernambucano" class="max-w-xs mx-auto">
+    </div>
+
+    <h1 class="text-3xl font-bold text-center mb-6">Acervo de Atividades - 3º Bimestre</h1>
+    
+    <!-- Filtros -->
+    <div class="mb-4 flex flex-col sm:flex-row gap-4">
+      <select id="typeFilter" class="p-2 border rounded">
+        <option value="all">Todos os Tipos</option>
+        <option value="Exercício">Exercício</option>
+        <option value="Prova">Prova</option>
+        <option value="Trabalho">Trabalho</option>
+      </select>
+      <select id="dateFilter" class="p-2 border rounded">
+        <option value="newest">Mais Recente</option>
+        <option value="oldest">Mais Antigo</option>
+      </select>
+    </div>
+
+    <!-- Lista de Atividades -->
+    <div id="activityList" class="grid gap-4">
+      <!-- Atividades serão inseridas aqui pelo JavaScript -->
+    </div>
+
+    <!-- Rodapé com Crédito -->
+    <footer class="mt-8 text-center text-gray-500 text-sm">
+      Desenvolvido por Guilherme Vitor, a pedido do professor Walter - ETEGP, 2025.
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

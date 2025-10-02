@@ -1,0 +1,31 @@
+/*coisas pra deixar menos feio*/
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+select {
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.activity-card {
+  transition: transform 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo para o logo */
+img {
+  max-height: 150px;
+  object-fit: contain;
+}
